@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COSPLAY CORNER</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f0f0f0;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Buscador */
+        .buscador {
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        .buscador input[type="text"] {
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 200px;
+        }
+
+        .buscador button {
+            padding: 0.5rem 1rem;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .buscador button:hover {
+            background-color: #777;
+        }
+
+        /* Secciones */
+        section {
+            padding: 2rem;
+            margin: 1rem auto;
+            max-width: 800px;
+            border-radius: 5px;
+            color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #inicio {
+            background-color: #5861d8;
+            /* Verde */
+        }
+
+        #biografia {
+            background-color: #2196F3;
+            /* Azul */
+        }
+
+        #habilidades {
+            background-color: #FF9800;
+            /* Naranja */
+        }
+
+        #proyectos {
+            background-color: #9C27B0;
+            /* Morado */
+        }
+
+        #contacto {
+            background-color: #E91E63;
+            /* Rosa */
+        }
+
+        #carro {
+            background-color: #607D8B;
+            /* Gris Azul */
+        }
+
+        /* Formulario de contacto */
+        form label {
+            display: block;
+            margin: 0.5rem 0 0.2rem;
+            color: #fff;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        form button {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+
+        /* Carro de Compra */
+        #carro p {
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Redes Sociales */
+        .redes-sociales {
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        .redes-sociales a {
+            margin: 0 0.5rem;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+
+        .redes-sociales a:hover {
+            opacity: 0.8;
+        }
+
+        .redes-sociales a:nth-child(1) {
+            background-color: #3b5998;
+        }
+
+        /* Facebook */
+        .redes-sociales a:nth-child(2) {
+            background-color: #00aced;
+        }
+
+        /* Twitter */
+        .redes-sociales a:nth-child(3) {
+            background-color: #0077b5;
+        }
+
+        /* LinkedIn */
+        .redes-sociales a:nth-child(4) {
+            background-color: #e4405f;
+        }
+
+        /* Instagram */
+
+        /* Pie de Página */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>COSPLAY CORNER</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#biografia">Biografía</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#carro">Carro de Compra</a></li>
+            </ul>
+        </nav>
+        <!-- Buscador -->
+        <div class="buscador">
+            <input type="text" placeholder="Buscar...">
+            <button>Buscar</button>
+        </div>
+    </header>
+
+    <!-- Inicio -->
+    <section id="inicio">
+        <h2>Bienvenido a Mi Página Personal</h2>
+        <p>Hola, soy [Tu Nombre], apasionado por [tu área de especialización]. Aquí puedes conocer más sobre mí, mis
+            habilidades y proyectos.</p>
+
+        <img src="logo.jpg" alt="Logo o Imagen de Cabecera" class="header-img">
+
+    </section>
+
+    <!-- Biografía -->
+    <section id="biografia">
+        <h2>Biografía</h2>
+        <p>Breve descripción sobre ti, tus intereses y experiencias. Aquí puedes destacar aspectos importantes de tu
+            vida personal y profesional.</p>
+
+        <iframe width="663" height="373" src="https://www.youtube.com/embed/VgdaOtLgcHA" title="Cosplayers"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>Habilidad 1</li>
+            <li>Habilidad 2</li>
+            <li>Habilidad 3</li>
+            <li>Habilidad 4</li>
+        </ul>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <p>Aquí puedes compartir algunos de tus proyectos destacados.</p>
+        <ul>
+            <li>Proyecto 1</li>
+            <li>Proyecto 2</li>
+            <li>Proyecto 3</li>
+        </ul>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Puedes ponerte en contacto conmigo completando el siguiente formulario.</p>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Carro de Compra -->
+    <section id="carro">
+        <h2>Carro de Compra</h2>
+        <p>Actualmente no tienes productos en el carrito.</p>
+    </section>
+
+    <!-- Botones de Redes Sociales -->
+    <footer>
+        <div class="redes-sociales">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+        <p>&copy; 2024 [Tu Nombre]. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
